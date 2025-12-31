@@ -4,33 +4,64 @@
   <meta charset="UTF-8">
   <title>AirAware India</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js (for future graphs, safe to keep) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <h1>AirAware India</h1>
-    <p>AQI Trends & Respiratory Risk Tracker</p>
+    <p>Real-Time AQI & Respiratory Risk Tracker</p>
   </header>
 
-  <section class="state-section">
-    <h2>Select an Indian State</h2>
-    <select id="stateSelect">
-      <option value="">-- Choose State --</option>
-      <option value="Delhi">Delhi</option>
-      <option value="Maharashtra">Maharashtra</option>
-      <option value="Kerala">Kerala</option>
-      <option value="Uttar Pradesh">Uttar Pradesh</option>
-    </select>
+  <!-- MAIN CONTENT -->
+  <main>
 
-    <div id="result"></div>
-  </section>
+    <!-- STATE / CITY SELECTION -->
+    <section class="state-section">
+      <h2>Select a City</h2>
 
+      <select id="stateSelect">
+        <option value="">-- Choose City --</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Chennai">Chennai</option>
+      </select>
+
+      <!-- RESULT OUTPUT -->
+      <div id="result"></div>
+    </section>
+
+    <!-- HEALTH INFO -->
+    <section class="info-section">
+      <h2>What AQI Means</h2>
+      <ul>
+        <li><strong>0–50:</strong> Good – Safe for everyone</li>
+        <li><strong>51–100:</strong> Moderate – Acceptable</li>
+        <li><strong>101–200:</strong> Unhealthy for sensitive groups</li>
+        <li><strong>201+:</strong> Very Poor – Health alert</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
   <footer>
-    <p>Data for educational purposes only | Sources: CPCB, WHO</p>
+    <p>
+      Educational project only.  
+      Data source: World Air Quality Index (WAQI), CPCB, WHO.
+    </p>
   </footer>
 
+  <!-- JAVASCRIPT -->
   <script src="script.js"></script>
+
 </body>
 </html>
-Add homepage structure
