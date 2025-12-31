@@ -1,4 +1,4 @@
-const token = "fcf95d6065381723c3ce0f9ccf0c06cdbd58fc5e"; // replace this
+const token = "fcf95d6065381723c3ce0f9ccf0c06cdbd58fc5e"; 
 
 const select = document.getElementById("stateSelect");
 const result = document.getElementById("result");
